@@ -1,0 +1,135 @@
+.Weather body {
+  background: #f7fdfe;
+  font-family: "Roboto", sans-serif;
+}
+
+.Weather a {
+  color: #5d8ef1;
+  font-weight: 450;
+}
+
+.Weather .weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.Weather header {
+  border-bottom: 1px solid #f7fdfe;
+  padding-bottom: 30px;
+}
+
+.Weather .search-input {
+  background-color: #f7fdfe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 70%;
+  border-radius: 6px;
+}
+
+.Weather .search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #5d8ef1;
+  color: white;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  width: 29%;
+  transition: all 200ms ease-in-out;
+}
+
+.Weather .search-button:hover {
+  background-color: #3a6bd8;
+}
+
+.Weather main {
+  padding: 30px 0;
+}
+
+.Weather .current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Weather .current-city {
+  font-size: 38px;
+  margin: 0;
+  line-height: 48px;
+}
+
+.Weather .current-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Weather .current-details strong {
+  color: #5d8ef1;
+}
+
+.Weather .current-temperature {
+  display: flex;
+}
+
+.Weather .current-temperature-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.Weather .current-temperature-value {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+
+.Weather .current-temperature-unit {
+  margin-top: 6px;
+  font-size: 28px;
+}
+
+.Weather .weather-forecast {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.Weather .weather-forecast-date {
+  text-align: center;
+  color: rgba(33, 47, 66, 0.5);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.Weather .weather-forecast-icon {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.Weather .weather-forecast-temperature-min {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.Weather .weather-forecast-temperatures {
+  text-align: center;
+  color: #5d8ef1;
+  font-size: 13px;
+}
+
+.Weather footer {
+  font-size: 13px;
+  border-top: 1px solid #f7fdfe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 10px;
+  color: rgba(39, 33, 66, 0.4);
+}
