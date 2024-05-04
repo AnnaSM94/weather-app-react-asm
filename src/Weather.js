@@ -39,7 +39,7 @@ export default function Weather() {
                 <span>Friday 21:00,</span> <span>light rain</span>
                 <br />
                 Humidity: <strong>80%</strong>, Wind:
-                <strong>5 mph</strong>
+                <strong> 5 mph</strong>
               </p>
             </div>
             <div className="current-temperature">

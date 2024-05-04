@@ -58,9 +58,9 @@
 }
 
 .Weather .current-city {
-  font-size: 38px;
   margin: 0;
-  line-height: 48px;
+  font-size: 38px;
+  line-height: 40px;
 }
 
 .Weather .current-details {
