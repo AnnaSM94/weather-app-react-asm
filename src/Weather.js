@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -20,7 +20,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -50,32 +50,7 @@ export default function Weather(props) {
             <input type="submit" value="Search" className="search-button" />
           </form>
         </header>
-        <div className="current-weather">
-          <div>
-            <h1 className="current-city">{weatherData.city}</h1>
-            <p className="current-details">
-              <FormattedDate date={weatherData.date} />
-              <span className="text-capitalize">{weatherData.description}</span>
-              <br />
-              Humidity: <strong>{weatherData.humidity}%</strong>, Wind:
-              <strong> {weatherData.wind} km/h</strong>
-            </p>
-          </div>
-          <div className="current-temperature">
-            <div>
-              <img
-                className="current-temperature-icon"
-                src={weatherData.iconUrl}
-                alt={weatherData.description}
-              />
-            </div>
-            <span className="current-temperature-value">
-              {weatherData.temperature}
-            </span>
-            <span className="current-temperature-unit">°C</span>
-          </div>
-        </div>
-        <div className="weather-forecast"></div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
