@@ -115,3 +115,7 @@
   color: #5d8ef1;
   font-size: 13px;
 }
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
