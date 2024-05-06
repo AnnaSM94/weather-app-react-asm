@@ -89,6 +89,7 @@
   display: flex;
   margin-top: 10px;
   justify-content: space-around;
+  color: rgba(39, 33, 66, 0.4);
 }
 
 .Weather .weather-forecast-date {
