@@ -30,32 +30,45 @@ export default function Weather() {
           <input type="submit" value="Search" className="search-button" />
         </form>
       </header>
-      <main>
-        <div className="current-weather">
-          <div>
-            <h1 className="current-city">Leeds</h1>
-            <p className="current-details">
-              <span>Friday 21:00,</span> <span>light rain</span>
-              <br />
-              Humidity: <strong>80%</strong>, Wind:
-              <strong> 5 mph</strong>
-            </p>
-          </div>
-          <div className="current-temperature">
-            <div>
-              {" "}
-              <img
-                className="current-temperature-icon"
-                src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
-                alt="temperature icon"
-              />
-            </div>
-            <span className="current-temperature-value">6</span>
-            <span className="current-temperature-unit">°C</span>
-          </div>
+      <div className="current-weather">
+        <div>
+          <h1 className="current-city">Leeds</h1>
+          <p className="current-details">
+            <span>Friday 21:00,</span> <span>light rain</span>
+            <br />
+            Humidity: <strong>80%</strong>, Wind:
+            <strong> 5 mph</strong>
+          </p>
         </div>
-        <div className="weather-forecast"></div>
-      </main>
+        <div className="current-temperature">
+          <div>
+            {" "}
+            <img
+              className="current-temperature-icon"
+              src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
+              alt="temperature icon"
+            />
+          </div>
+          <span className="current-temperature-value">6</span>
+          <span className="current-temperature-unit">°C</span>
+        </div>
+      </div>
+      <div className="weather-forecast">
+        <div className="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
+            alt="temp icon"
+          />
+          6°C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 70%</li>
+            <li>Wind: 13 km/h</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
