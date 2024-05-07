@@ -1,11 +1,18 @@
 .App footer {
-  font-size: 13px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
   border-top: 1px solid #f7fdfe;
   padding: 30px 0 0 0;
   text-align: center;
   padding-top: 15px;
   margin-top: 10px;
   color: rgba(39, 33, 66, 0.4);
+}
+
+.App footer a {
+  color: #5d8ef1;
+  font-weight: 450;
+  text-decoration: none;
 }
 
 .App .weather-app {
