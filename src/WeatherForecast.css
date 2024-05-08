@@ -25,3 +25,9 @@
   opacity: 0.5;
   margin-left: 5px;
 }
+
+.WeatherForecast .col {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
